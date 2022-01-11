@@ -342,7 +342,155 @@ static NSArray *VERSIONS = nil;
                                                dataRegionSizeRows:14
                                             dataRegionSizeColumns:22
                                                          ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:28
-                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:49]]]];
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:49]]],
+  
+               // extended forms as specified in
+               // ISO 21471:2020 (DMRE) 5.5.1 Table 7
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:31
+                                                   symbolSizeRows:8
+                                                symbolSizeColumns:48
+                                               dataRegionSizeRows:6
+                                            dataRegionSizeColumns:22
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:15
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:18]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:32
+                                                   symbolSizeRows:8
+                                                symbolSizeColumns:64
+                                               dataRegionSizeRows:6
+                                            dataRegionSizeColumns:14
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:18
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:24]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:33
+                                                   symbolSizeRows:8
+                                                symbolSizeColumns:80
+                                               dataRegionSizeRows:6
+                                            dataRegionSizeColumns:18
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:22
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:32]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:34
+                                                   symbolSizeRows:8
+                                                symbolSizeColumns:96
+                                               dataRegionSizeRows:6
+                                            dataRegionSizeColumns:22
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:28
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:38]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:35
+                                                   symbolSizeRows:8
+                                                symbolSizeColumns:120
+                                               dataRegionSizeRows:6
+                                            dataRegionSizeColumns:18
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:32
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:49]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:36
+                                                   symbolSizeRows:8
+                                                symbolSizeColumns:144
+                                               dataRegionSizeRows:6
+                                            dataRegionSizeColumns:22
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:36
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:63]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:37
+                                                   symbolSizeRows:12
+                                                symbolSizeColumns:64
+                                               dataRegionSizeRows:10
+                                            dataRegionSizeColumns:14
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:27
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:43]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:38
+                                                   symbolSizeRows:12
+                                                symbolSizeColumns:88
+                                               dataRegionSizeRows:10
+                                            dataRegionSizeColumns:20
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:36
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:64]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:39
+                                                   symbolSizeRows:16
+                                                symbolSizeColumns:64
+                                               dataRegionSizeRows:14
+                                            dataRegionSizeColumns:14
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:36
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:62]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:40
+                                                   symbolSizeRows:20
+                                                symbolSizeColumns:36
+                                               dataRegionSizeRows:18
+                                            dataRegionSizeColumns:16
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:28
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:44]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:41
+                                                   symbolSizeRows:20
+                                                symbolSizeColumns:44
+                                               dataRegionSizeRows:18
+                                            dataRegionSizeColumns:20
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:34
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:56]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:42
+                                                   symbolSizeRows:20
+                                                symbolSizeColumns:64
+                                               dataRegionSizeRows:18
+                                            dataRegionSizeColumns:14
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:42
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:84]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:43
+                                                   symbolSizeRows:22
+                                                symbolSizeColumns:48
+                                               dataRegionSizeRows:20
+                                            dataRegionSizeColumns:22
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:38
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:72]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:44
+                                                   symbolSizeRows:24
+                                                symbolSizeColumns:48
+                                               dataRegionSizeRows:22
+                                            dataRegionSizeColumns:22
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:41
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:80]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:45
+                                                   symbolSizeRows:24
+                                                symbolSizeColumns:64
+                                               dataRegionSizeRows:22
+                                            dataRegionSizeColumns:14
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:46
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:108]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:46
+                                                   symbolSizeRows:26
+                                                symbolSizeColumns:40
+                                               dataRegionSizeRows:24
+                                            dataRegionSizeColumns:18
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:38
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:70]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:47
+                                                   symbolSizeRows:26
+                                                symbolSizeColumns:48
+                                               dataRegionSizeRows:24
+                                            dataRegionSizeColumns:22
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:42
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:90]]],
+               
+               [[ZXDataMatrixVersion alloc] initWithVersionNumber:48
+                                                   symbolSizeRows:26
+                                                symbolSizeColumns:64
+                                               dataRegionSizeRows:24
+                                            dataRegionSizeColumns:14
+                                                         ecBlocks:[[ZXDataMatrixECBlocks alloc] initWithCodewords:50
+                                                                                                         ecBlocks:[[ZXDataMatrixECB alloc] initWithCount:1 dataCodewords:118]]]
+               
+  ];
 }
 
 @end

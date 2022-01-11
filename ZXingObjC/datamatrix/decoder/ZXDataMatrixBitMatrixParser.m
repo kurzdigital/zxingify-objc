@@ -149,6 +149,9 @@
     column += numColumns;
     row += 4 - ((numColumns + 4) & 0x07);
   }
+  if (row >= numRows) {
+    row -= numRows;
+  }
   [self.readMappingMatrix setX:column y:row];
   return [self.mappingBitMatrix getX:column y:row];
 }
